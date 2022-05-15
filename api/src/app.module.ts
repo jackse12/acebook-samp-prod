@@ -29,7 +29,7 @@ import { MuserModule } from './musers/musers.modules';
     GraphQLModule.forRoot({
       autoSchemaFile: true,
       cors: {
-        origin: '*, *',
+        origin: 'http://172.104.181.36',
         credentials: true
       }
     }),
