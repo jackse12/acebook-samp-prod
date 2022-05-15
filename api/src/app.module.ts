@@ -30,6 +30,7 @@ import { MuserModule } from './musers/musers.modules';
       autoSchemaFile: true,
       cors: {
         origin: '*',
+        credentials: true
       }
     }),
     UsersModule,
