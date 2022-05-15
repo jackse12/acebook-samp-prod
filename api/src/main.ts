@@ -10,7 +10,7 @@ async function bootstrap() {
     .connect("mongodb+srv://jackyse:hghghfgd@cluster0.lzcbm.mongodb.net/acebook3?retryWrites=true&w=majority")
     .then( async () => {
       const app = await NestFactory.create(AppModule);
-      app.enableCors();
+      // app.enableCors();
       app.useGlobalPipes(new ValidationPipe());
       app.use(graphqlUploadExpress({ maxFileSize: 1000000, maxFiles: 10 }));
       await app.listen(4000);
