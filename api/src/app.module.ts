@@ -28,6 +28,9 @@ import { MuserModule } from './musers/musers.modules';
   imports: [
     GraphQLModule.forRoot({
       autoSchemaFile: true,
+      cors: {
+        origin: '*',
+      }
     }),
     UsersModule,
     ProductsModule,
